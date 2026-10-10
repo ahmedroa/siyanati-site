@@ -415,6 +415,7 @@ button { font: inherit; color: inherit; }
 .doc h3 { margin: 24px 0 8px; font-size: 18px; }
 .doc p, .doc li { font-size: 16.5px; line-height: 1.9; color: var(--ink-2); }
 .doc ul { display: grid; gap: 6px; margin: 10px 0; padding-inline-start: 22px; list-style: disc; }
+.doc ol { display: grid; gap: 6px; margin: 10px 0; padding-inline-start: 22px; list-style: decimal; }
 .doc strong { color: var(--ink); }
 .doc a { color: var(--brand-ink); }
 .doc table { width: 100%; margin: 14px 0; border-collapse: collapse; font-size: 15.5px; }
