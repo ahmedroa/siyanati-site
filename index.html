@@ -10,7 +10,8 @@
   <meta property="og:locale" content="ar_SA">
   <meta property="og:title" content="صياناتي — كل صيانة في موعدها">
   <meta property="og:description" content="سجّل ممشى سيارتك وقطعها مرة واحدة، وصياناتي يحسب موعد كل قطعة ويذكّرك قبل أن يفوتك.">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/img/app-icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/app-icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500&display=swap">
@@ -29,13 +30,13 @@
 <header class="header" id="top">
   <div class="container header-row">
     <a class="logo" href="#home" aria-label="صياناتي، الرئيسية">
-      <svg viewBox="0 0 96 96" width="34" height="34" class="mark-brand" aria-hidden="true"><path class="mark" d="M25.4 74.6A32 32 0 0 1 56.3 21.1"/><path class="mark" d="M79.9 49.2A32 32 0 0 1 70.6 74.6"/><path class="mark" d="M34 53l10 10 28-36"/></svg>
+      <img class="app-icon" src="assets/img/app-icon.svg" width="36" height="36" alt="">
       <span class="logo-word">صياناتي</span>
     </a>
     <nav class="nav" aria-label="أقسام الموقع">
       <a href="#about">عن صياناتي</a>
       <a href="#features">المميزات</a>
-      <a href="#how">كيف يعمل؟</a>
+      <a href="#try">جرّبها بنفسك</a>
       <a href="#screens">الشاشات</a>
       <a href="#why">لماذا صياناتي؟</a>
       <a href="#faq">الأسئلة الشائعة</a>
@@ -57,7 +58,7 @@
       <li><a href="#home"><span class="mono">01</span>الرئيسية</a></li>
       <li><a href="#about"><span class="mono">02</span>عن صياناتي</a></li>
       <li><a href="#features"><span class="mono">03</span>مميزات التطبيق</a></li>
-      <li><a href="#how"><span class="mono">04</span>كيف يعمل؟</a></li>
+      <li><a href="#try"><span class="mono">04</span>جرّبها بنفسك</a></li>
       <li><a href="#screens"><span class="mono">05</span>شاشات التطبيق</a></li>
       <li><a href="#why"><span class="mono">06</span>لماذا صياناتي؟</a></li>
       <li><a href="#download"><span class="mono">07</span>تحميل التطبيق</a></li>
@@ -73,12 +74,14 @@
 
 <!-- ============ 01 الرئيسية ============ -->
 <section class="hero on-night" id="home" aria-labelledby="hero-title">
-  <svg class="hero-bg" viewBox="0 0 96 96" aria-hidden="true">
-    <g fill="none" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
-      <path class="a" d="M25.4 74.6A32 32 0 0 1 56.3 21.1"/>
-      <path class="a" d="M79.9 49.2A32 32 0 0 1 70.6 74.6"/>
-      <path class="c" d="M34 53l10 10 28-36"/>
+  <svg class="hero-bg" viewBox="-340 -340 680 680" aria-hidden="true">
+    <g class="a" fill="none" stroke-linecap="round">
+      <path stroke-width="76" d="M-212.1 212.1A300 300 0 1 1 212.1 212.1"/>
+      <path stroke-width="15" d="M-140.4 140.4L-169 169M-198.5 0L-239 0M-140.4 -140.4L-169 -169M0 -198.5L0 -239M140.4 -140.4L169 -169M198.5 0L239 0M140.4 140.4L169 169"/>
+      <path stroke-width="44" d="M0 0L-54.4 -202.8"/>
+      <circle r="41" stroke-width="38"/>
     </g>
+    <path class="c" fill="none" stroke-width="76" stroke-linecap="round" d="M-212.1 212.1A300 300 0 0 1 -62.4 -293.4"/>
   </svg>
   <div class="container hero-grid">
     <div class="hero-copy">
@@ -102,7 +105,7 @@
         <img src="assets/img/screens/home-light.jpg" width="600" height="1304" alt="الشاشة الرئيسية في صياناتي: بطاقة الممشى الحالي 16,000 كم، وملخص يقول سيارتك بحالة ممتازة، والإجراءات السريعة.">
       </div>
       <div class="float float-note note" aria-hidden="true">
-        <svg viewBox="0 0 96 96" width="40" height="40" class="mark-duo"><rect class="mark-tile" width="96" height="96" rx="22"/><g transform="translate(48 48) scale(.8) translate(-48 -47.3)"><path class="mark mark-arc" d="M25.4 74.6A32 32 0 0 1 56.3 21.1"/><path class="mark mark-arc" d="M79.9 49.2A32 32 0 0 1 70.6 74.6"/><path class="mark mark-check" d="M34 53l10 10 28-36"/></g></svg>
+        <img class="app-icon" src="assets/img/app-icon.svg" width="40" height="40" alt="">
         <div class="note-text">
           <div class="note-top"><span>صياناتي</span><span>الآن</span></div>
           <p class="note-title">زيت المكينة قرب موعده</p>
@@ -120,25 +123,25 @@
 <!-- ============ 02 عن صياناتي ============ -->
 <section class="section" id="about" aria-labelledby="about-title">
   <div class="container">
-    <header class="sec-head reveal">
-      <p class="eyebrow"><span class="eyebrow-num">02</span>عن صياناتي</p>
-      <h2 class="h2" id="about-title">صيانة سيارتك تُدار بالممشى، لا بالذاكرة</h2>
-      <p class="lead">صياناتي يحوّل صيانة السيارة من شيء تتذكره متأخرًا إلى شيء يُدار بالممشى. تسجّل سيارتك وقطعها مرة واحدة، والتطبيق يحسب الموعد القادم لكل قطعة ويخبرك بحالتها.</p>
-    </header>
-
     <div class="about-grid">
-      <div class="promise reveal">
-        <svg class="promise-mark" viewBox="0 0 96 96" aria-hidden="true"><path class="mark mark-arc" d="M25.4 74.6A32 32 0 0 1 56.3 21.1"/><path class="mark mark-arc" d="M79.9 49.2A32 32 0 0 1 70.6 74.6"/><path class="mark mark-check" d="M34 53l10 10 28-36"/></svg>
-        <span class="eyebrow" style="color: var(--on-brand); opacity: .85;">وعدنا لك</span>
-        <q>كل صيانة في موعدها.</q>
-        <p>الشعار قوس عدّاد تخترقه علامة صح مثل الإبرة. القوس هو الممشى، والصح هو لحظة تسجيل التغيير. معًا يقولان: الصيانة تمت في موعدها.</p>
-      </div>
-      <div class="about-side">
-        <div class="card persona reveal">
-          <span class="cap">شخصية التطبيق</span>
-          <blockquote>صديق يفهم في السيارات: هادئ، دقيق، يخبرك بما يلزم ثم يسكت.</blockquote>
+      <header class="sec-head about-head reveal">
+        <p class="eyebrow"><span class="eyebrow-num">02</span>عن صياناتي</p>
+        <h2 class="h2" id="about-title">كل تفاصيل صيانة سيارتك، في مكان واحد.</h2>
+        <p class="lead">صياناتي يحوّل صيانة السيارة من شيء تتذكره متأخرًا إلى شيء يُدار بالممشى. تسجّل سيارتك وقطعها مرة واحدة، والتطبيق يحسب الموعد القادم لكل قطعة ويخبرك بحالتها.</p>
+      </header>
+
+      <div class="promise on-night reveal">
+        <svg class="gauge" viewBox="-340 -340 680 592" aria-hidden="true"><g fill="none" stroke-linecap="round"><path class="gauge-track" d="M-212.1 212.1A300 300 0 1 1 212.1 212.1"/><path class="gauge-fill" pathLength="1" d="M-212.1 212.1A300 300 0 1 1 212.1 212.1"/><path class="gauge-major" d="M-140.4 140.4L-169 169M-198.5 0L-239 0M-140.4 -140.4L-169 -169M0 -198.5L0 -239M140.4 -140.4L169 -169M198.5 0L239 0M140.4 140.4L169 169"/><path class="gauge-minor" d="M-187.9 108.5L-206.5 119.2M-209.6 56.2L-230.4 61.7M-209.6 -56.2L-230.4 -61.7M-187.9 -108.5L-206.5 -119.3M-108.5 -187.9L-119.2 -206.5M-56.2 -209.6L-61.7 -230.4M56.2 -209.6L61.7 -230.4M108.5 -187.9L119.2 -206.5M187.9 -108.5L206.5 -119.3M209.6 -56.2L230.4 -61.7M209.6 56.2L230.4 61.7M187.9 108.5L206.5 119.2"/><path class="gauge-needle" d="M0 0V-210"/></g><circle class="gauge-hub" r="60"/><circle class="gauge-hub-dot" r="22"/></svg>
+        <div class="promise-copy">
+          <p class="eyebrow">وعدنا لك</p>
+          <q>كل صيانة <span>في موعدها.</span></q>
+          <p class="promise-text">صياناتي يتابع كل قطعة في سيارتك من الممشى، وينبّهك حين يقترب موعدها، فتغيّرها في وقتها لا بعد أن يفوت.</p>
         </div>
-        <div class="card audience reveal">
+      </div>
+
+      <div class="about-side">
+        <div class="audience reveal">
+          <h3 class="cap">لمن صياناتي؟</h3>
           <ul>
             <li><span class="tile"><span class="i i-r" aria-hidden="true">directions_car</span></span><div><b>مالك السيارة</b><span class="text">لا يريد أن يحفظ مواعيد الزيت والفلاتر.</span></div></li>
             <li><span class="tile"><span class="i i-o" aria-hidden="true">group</span></span><div><b>العائلة</b><span class="text">تتشارك سيارة واحدة وتحتاج أن تعرف ما تم وما بقي.</span></div></li>
@@ -148,12 +151,10 @@
       </div>
     </div>
 
-    <div class="principles">
-      <article class="card principle reveal"><span class="tile"><span class="i i-r" aria-hidden="true">speed</span></span><h3 class="h3">الممشى هو المرجع</h3><p class="text">أكبر رقم في التطبيق هو الممشى الحالي، وكل موعد يُحسب منه.</p></article>
-      <article class="card principle reveal"><span class="tile"><span class="i i-r" aria-hidden="true">check_circle</span></span><h3 class="h3">الحالة قبل التفاصيل</h3><p class="text">ترى اللون والكلمة أولًا، ثم الأرقام لمن يريدها.</p></article>
-      <article class="card principle reveal"><span class="tile"><span class="i i-o" aria-hidden="true">notifications</span></span><h3 class="h3">هادئ حتى يلزم التنبيه</h3><p class="text">ألوان الحالة لا تظهر إلا للحالة، فإذا ظهر الأحمر عرفت أنه مهم.</p></article>
-      <article class="card principle reveal"><span class="tile"><span class="i i-r" aria-hidden="true">wifi_off</span></span><h3 class="h3">يعمل في كل ظرف</h3><p class="text">بلا إنترنت، بلا حساب، في الوضع الفاتح والداكن.</p></article>
-    </div>
+    <ol class="principles">
+      <li class="principle reveal"><div class="principle-top"><span class="i i-r" aria-hidden="true">speed</span><span class="mono">01</span></div><h3 class="h3">الممشى هو المرجع</h3><p class="text">أكبر رقم في التطبيق هو الممشى الحالي، وكل موعد يُحسب منه.</p></li>
+      <li class="principle reveal"><div class="principle-top"><span class="i i-r" aria-hidden="true">check_circle</span><span class="mono">02</span></div><h3 class="h3">الحالة قبل التفاصيل</h3><p class="text">ترى اللون والكلمة أولًا، ثم الأرقام لمن يريدها.</p></li>
+      <li class="principle reveal"><div class="principle-top"><span class="i i-o" aria-hidden="true">notifications</span><span class="mono">03</span></div><h3 class="h3">هادئ حتى يلزم التنبيه</h3><p class="text">ألوان الحالة لا تظهر إلا للحالة، فإذا ظهر الأحمر عرفت أنه مهم.</p></li>    </ol>
   </div>
 </section>
 
@@ -209,73 +210,19 @@
       <article class="card feature reveal"><span class="tile"><span class="i i-o" aria-hidden="true">picture_as_pdf</span></span><h3 class="h3">تقرير صيانة PDF</h3><p>تقرير بحالة القطع وسجل الصيانات، فيه رمز QR. يفيدك إذا أردت بيع السيارة أو عرض تاريخها على أحد.</p></article>
       <article class="card feature reveal"><span class="tile"><span class="i i-r" aria-hidden="true">directions_car</span></span><h3 class="h3">أكثر من سيارة</h3><p>أضف سياراتك كلها، وبدّل بينها من أعلى الشاشة الرئيسية.</p></article>
     </div>
-
-    <div class="extras">
-      <div class="extra reveal"><span class="i i-r" aria-hidden="true">wifi_off</span><div><b>يعمل بدون إنترنت</b><span>بياناتك محفوظة على جهازك</span></div></div>
-      <div class="extra reveal"><span class="i i-r" aria-hidden="true">person_off</span><div><b>استخدمه كضيف</b><span>الحساب اختياري للمزامنة والمشاركة</span></div></div>
-      <div class="extra reveal"><span class="i i-r" aria-hidden="true">sync</span><div><b>مزامنة بين أجهزتك</b><span>بحساب Google أو Apple أو البريد</span></div></div>
-      <div class="extra reveal"><span class="i i-r" aria-hidden="true">dark_mode</span><div><b>فاتح وداكن</b><span>وعربي من اليمين لليسار</span></div></div>
-    </div>
   </div>
 </section>
 
-<!-- ============ 04 كيف يعمل؟ ============ -->
-<section class="section" id="how" aria-labelledby="how-title">
+<!-- ============ 04 جرّبها بنفسك ============ -->
+<section class="section" id="try" aria-labelledby="try-title">
   <div class="container">
     <header class="sec-head reveal">
-      <p class="eyebrow"><span class="eyebrow-num">04</span>كيف يعمل؟</p>
-      <h2 class="h2" id="how-title">أربع خطوات، ثم يتولى التطبيق الحساب</h2>
-      <p class="lead">لا جداول ولا تواريخ تحفظها. رقم واحد تحدّثه، والباقي يُحسب منه.</p>
+      <p class="eyebrow"><span class="eyebrow-num">04</span>جرّبها بنفسك</p>
+      <h2 class="h2" id="try-title">حرّك الممشى وشاهد الحالة تتغير</h2>
     </header>
 
-    <ol class="steps">
-      <li class="card step reveal"><span class="step-num">01</span><span class="tile"><span class="i i-r" aria-hidden="true">directions_car</span></span><h3 class="h3">أضف سيارتك</h3><p>الماركة والموديل والممشى الحالي.</p></li>
-      <li class="card step reveal"><span class="step-num">02</span><span class="tile"><span class="i i-r" aria-hidden="true">add_task</span></span><h3 class="h3">اختر القطع</h3><p>من القطع الجاهزة بفتراتها، أو أضف قطعة باسمها وفترتها، مع ممشى آخر تغيير.</p></li>
-      <li class="card step reveal"><span class="step-num">03</span><span class="tile"><span class="i i-r" aria-hidden="true">speed</span></span><h3 class="h3">حدّث الممشى</h3><p>كلما تذكرت، والتطبيق يذكّرك مرة كل أسبوع.</p></li>
-      <li class="card step reveal"><span class="step-num">04</span><span class="tile"><span class="i i-o" aria-hidden="true">build_circle</span></span><h3 class="h3">غيّر واضغط «تم التغيير»</h3><p>حين تصير القطعة قريبة أو مستحقة، غيّرها وسجّل التغيير، فيبدأ عدّها من جديد.</p></li>
-    </ol>
-
-    <div class="rules">
-      <div class="rule reveal"><p class="cap">الموعد القادم</p><p>ممشى آخر تغيير + الفترة</p></div>
-      <div class="rule reveal"><p class="cap">متى تصير القطعة قريبة؟</p><p>حين يبقى <span class="num">10%</span> من الفترة، بين <span class="num">300</span> و <span class="num">1,000</span> كم</p></div>
-    </div>
-
-    <div class="card timeline reveal">
-      <div class="timeline-head"><h3 class="h3">عمر القطعة، مثال زيت المكينة</h3><span class="cap">كل <span class="num">5,000</span> كم</span></div>
-      <div class="tl" role="img" aria-label="زيت المكينة: سليمة من 15,000 إلى 19,500 كم، قريبة من 19,500 إلى 20,000 كم، ومستحقة بعد 20,000 كم.">
-        <div class="tl-row" aria-hidden="true">
-          <span class="tl-label tl-ok" style="color: var(--ok);">سليمة · <span class="num">4,500</span> كم</span>
-          <span class="tl-label tl-soon" style="color: var(--soon);">قريبة · <span class="num">500</span></span>
-          <span class="tl-label tl-due" style="color: var(--due); text-align: left;">مستحقة</span>
-        </div>
-        <div class="tl-row tl-bars" aria-hidden="true">
-          <span class="tl-ok" style="background: var(--ok-fill);"></span>
-          <span class="tl-soon" style="background: var(--soon-fill);"></span>
-          <span class="tl-due" style="background: var(--due-fill);"></span>
-        </div>
-        <div class="tl-row" aria-hidden="true">
-          <div class="tl-mark tl-ok"><b class="num">15,000</b><span>آخر تغيير</span></div>
-          <div class="tl-mark tl-soon"><b class="num">19,500</b><span>حدّ التنبيه</span></div>
-          <div class="tl-mark tl-due"><b class="num">20,000</b><span>الموعد</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="card presets reveal">
-      <div class="presets-head"><h3 class="h3">قطع جاهزة بفتراتها المعتادة</h3><span class="cap">تقدر تعدّل أي فترة، أو تضيف قطعة غيرها</span></div>
-      <ul>
-        <li><b>زيت المكينة</b><span>كل <span class="num">5,000</span> كم</span></li>
-        <li><b>زيت القير</b><span>كل <span class="num">40,000</span> كم</span></li>
-        <li><b>فلتر الهواء</b><span>كل <span class="num">15,000</span> كم</span></li>
-        <li><b>فلتر المكيف</b><span>كل <span class="num">15,000</span> كم</span></li>
-        <li><b>البطارية</b><span>كل <span class="num">50,000</span> كم</span></li>
-        <li><b>الكفرات</b><span>كل <span class="num">40,000</span> كم</span></li>
-      </ul>
-    </div>
-
-    <div class="card calc reveal" id="try">
+    <div class="card calc reveal">
       <div class="calc-controls">
-        <div><p class="eyebrow" style="margin-bottom: 8px;">جرّبها بنفسك</p><h3 class="h3">حرّك الممشى وشاهد الحالة تتغير</h3></div>
         <div>
           <span class="field-label" id="calc-part-label">القطعة</span>
           <div class="chips" role="radiogroup" aria-labelledby="calc-part-label" id="calc-parts"></div>
@@ -371,13 +318,6 @@
       <div class="compare-row"><div><span class="i i-r i-20" aria-hidden="true">close</span><span><span class="sr-only">من دون صياناتي: </span>لا أحد في البيت يعرف ما تم وما بقي.</span></div><div><span class="i i-r i-20" aria-hidden="true">check</span><span><span class="sr-only">مع صياناتي: </span>سيارة مشتركة، ولكل فرد صلاحيته.</span></div></div>
       <div class="compare-row"><div><span class="i i-r i-20" aria-hidden="true">close</span><span><span class="sr-only">من دون صياناتي: </span>عند البيع لا سجل يثبت أن السيارة صينت.</span></div><div><span class="i i-r i-20" aria-hidden="true">check</span><span><span class="sr-only">مع صياناتي: </span>تقرير PDF بالسجل الكامل ورمز QR.</span></div></div>
     </div>
-
-    <div class="values">
-      <article class="card value reveal"><span class="tile"><span class="i i-r" aria-hidden="true">translate</span></span><h3 class="h3">عربي من الأساس</h3><p>بمفردات الناس: الممشى، المكينة، القير، الكفرات.</p></article>
-      <article class="card value reveal"><span class="tile"><span class="i i-r" aria-hidden="true">wifi_off</span></span><h3 class="h3">يعمل بدون إنترنت</h3><p>البيانات على جهازك أولًا، والمزامنة حين تسجّل الدخول.</p></article>
-      <article class="card value reveal"><span class="tile"><span class="i i-o" aria-hidden="true">lock</span></span><h3 class="h3">بياناتك لك</h3><p>بلا إعلانات، ولا نبيع بياناتك. ووثائقك على جهازك فقط.</p></article>
-      <article class="card value reveal"><span class="tile"><span class="i i-o" aria-hidden="true">notifications</span></span><h3 class="h3">تنبيه بلا إزعاج</h3><p>لا يتكرر التنبيه إلا إذا تغيرت حالة القطعة.</p></article>
-    </div>
   </div>
 </section>
 
@@ -385,9 +325,7 @@
 <section class="section section-white" id="download" aria-labelledby="download-title">
   <div class="container">
     <div class="download reveal">
-      <div class="download-icon">
-        <svg viewBox="0 0 96 96" width="78" height="78" class="mark-duo" role="img" aria-label="أيقونة صياناتي"><path class="mark mark-arc" d="M25.4 74.6A32 32 0 0 1 56.3 21.1"/><path class="mark mark-arc" d="M79.9 49.2A32 32 0 0 1 70.6 74.6"/><path class="mark mark-check" d="M34 53l10 10 28-36"/></svg>
-      </div>
+      <img class="app-icon download-icon" src="assets/img/app-icon.svg" width="132" height="132" alt="أيقونة صياناتي">
       <div class="download-copy">
         <p class="eyebrow" style="color: var(--mint);"><span class="eyebrow-num" style="background: #ffffff26;">07</span>تحميل التطبيق</p>
         <h2 class="h2" id="download-title">حمّل صياناتي</h2>
@@ -442,22 +380,10 @@
     <header class="sec-head reveal">
       <p class="eyebrow"><span class="eyebrow-num">09</span>الأسئلة الشائعة</p>
       <h2 class="h2" id="faq-title">أسئلة تصلنا كثيرًا</h2>
-      <p class="lead">لم تجد سؤالك؟ <a href="#contact" style="color: var(--brand-ink);">راسلنا</a> على X.</p>
+      <p class="lead">لم تجد سؤالك؟ <a href="https://x.com/dev__ahmed" target="_blank" rel="noopener" style="color: var(--brand-ink);">راسلنا</a> على X.</p>
     </header>
     <div class="faq">
       <details class="reveal" open>
-        <summary>كيف يحسب صياناتي موعد الصيانة؟<span class="i i-r" aria-hidden="true">expand_more</span></summary>
-        <p class="answer">الموعد القادم لكل قطعة = ممشى آخر تغيير + الفترة. مثلًا: غيّرت زيت المكينة على <span class="num">15,000</span> كم والفترة <span class="num">5,000</span> كم، فموعدك القادم <span class="num">20,000</span> كم.</p>
-      </details>
-      <details class="reveal">
-        <summary>متى تصير القطعة «قريبة» ومتى «مستحقة»؟<span class="i i-r" aria-hidden="true">expand_more</span></summary>
-        <p class="answer">تصير قريبة حين يبقى على موعدها <span class="num">10%</span> من الفترة أو أقل، بحد أدنى <span class="num">300</span> كم وأقصى <span class="num">1,000</span> كم. لزيت المكينة مثلًا يبدأ التنبيه قبل الموعد بـ <span class="num">500</span> كم. وإذا تعدّى الممشى الموعد صارت مستحقة.</p>
-      </details>
-      <details class="reveal">
-        <summary>هل أحتاج إلى حساب أو إنترنت؟<span class="i i-r" aria-hidden="true">expand_more</span></summary>
-        <p class="answer">لا. تقدر تستخدم التطبيق كضيف، وبياناتك محفوظة على جهازك وتعمل بدون إنترنت. الحساب، بـ Google أو Apple أو البريد، يفيدك في مزامنة بياناتك بين أجهزتك ومشاركة السيارة.</p>
-      </details>
-      <details class="reveal">
         <summary>هل أقدر أضيف قطعة غير موجودة أو أغيّر فترتها؟<span class="i i-r" aria-hidden="true">expand_more</span></summary>
         <p class="answer">نعم. القطع الجاهزة اقتراحات بفتراتها المعتادة، وتقدر تعدّل الفترة أو تضيف أي قطعة باسمها وفترتها.</p>
       </details>
@@ -490,41 +416,30 @@
 </section>
 
 <!-- ============ 10 تواصل معنا ============ -->
-<section class="section" id="contact" aria-labelledby="contact-title">
+<section class="section" id="contact" aria-label="تواصل معنا">
   <div class="container">
-    <header class="sec-head reveal">
-      <p class="eyebrow"><span class="eyebrow-num">10</span>تواصل معنا</p>
-      <h2 class="h2" id="contact-title">نسمع منك</h2>
-      <p class="lead">اقتراح ميزة، مشكلة واجهتك، أو طلب حذف حساب. كلها تصلنا من مكان واحد.</p>
-    </header>
     <div class="contact-grid">
-      <a class="card contact-card contact-main reveal" href="https://x.com/dev__ahmed" target="_blank" rel="noopener">
-        <span class="tile"><span class="i i-r" aria-hidden="true">alternate_email</span></span>
-        <span class="contact-handle mono">@dev__ahmed</span>
-        <p>راسلنا على X، وتصل رسالتك إلى المطوّر مباشرة.</p>
-        <span class="more">افتح X<span class="i i-r i-20" aria-hidden="true">north_west</span></span>
-      </a>
       <a class="card contact-card reveal" href="https://apps.apple.com/app/id6759578745?action=write-review" target="_blank" rel="noopener">
         <span class="tile"><span class="i i-r" aria-hidden="true">star</span></span>
         <h3 class="h3">قيّم التطبيق</h3>
         <p>رأيك في المتجر يساعد غيرك على إيجاد صياناتي.</p>
         <span class="more">اكتب تقييمك<span class="i i-r i-20" aria-hidden="true">north_west</span></span>
       </a>
-    </div>
-    <div class="card follow reveal">
-      <div class="follow-copy">
-        <h3 class="h3">تابع صياناتي</h3>
-        <p>جديد التطبيق وتحديثاته على حسابه <span class="mono">@siyanati_app</span></p>
-      </div>
-      <div class="follow-links">
-        <a class="btn btn-outline" href="https://www.instagram.com/siyanati_app/" target="_blank" rel="noopener">
-          <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>
-          تابعنا على Instagram
-        </a>
-        <a class="btn btn-outline" href="https://x.com/siyanati_app" target="_blank" rel="noopener">
-          <svg class="glyph" viewBox="-2 -2 28 28" aria-hidden="true"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
-          تابعنا على X
-        </a>
+      <div class="card follow reveal">
+        <div class="follow-copy">
+          <h3 class="h3">تابع صياناتي</h3>
+          <p>جديد التطبيق وتحديثاته على حسابه <span class="mono">@siyanati_app</span></p>
+        </div>
+        <div class="follow-links">
+          <a class="btn btn-outline" href="https://www.instagram.com/siyanati_app/" target="_blank" rel="noopener">
+            <svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></svg>
+            تابعنا على Instagram
+          </a>
+          <a class="btn btn-outline" href="https://x.com/siyanati_app" target="_blank" rel="noopener">
+            <svg class="glyph" viewBox="-2 -2 28 28" aria-hidden="true"><path fill="currentColor" d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+            تابعنا على X
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -538,7 +453,7 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a class="logo" href="#home" aria-label="صياناتي، الرئيسية">
-          <svg viewBox="0 0 96 96" width="34" height="34" class="mark-brand" aria-hidden="true"><path class="mark" d="M25.4 74.6A32 32 0 0 1 56.3 21.1"/><path class="mark" d="M79.9 49.2A32 32 0 0 1 70.6 74.6"/><path class="mark" d="M34 53l10 10 28-36"/></svg>
+          <img class="app-icon" src="assets/img/app-icon.svg" width="36" height="36" alt="">
           <span class="logo-word">صياناتي</span>
         </a>
         <p>تطبيق عربي لمتابعة صيانة السيارة بالممشى. كل صيانة في موعدها.</p>
@@ -552,7 +467,7 @@
         <ul>
           <li><a href="#about">عن صياناتي</a></li>
           <li><a href="#features">مميزات التطبيق</a></li>
-          <li><a href="#how">كيف يعمل؟</a></li>
+          <li><a href="#try">جرّبها بنفسك</a></li>
           <li><a href="#faq">الأسئلة الشائعة</a></li>
         </ul>
       </div>
