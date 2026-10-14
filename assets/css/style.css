@@ -120,12 +120,13 @@ button { font: inherit; color: inherit; }
 .store-label b { font-size: 18px; font-weight: 700; direction: ltr; unicode-bidi: isolate; text-align: right; }
 .store-filled { background: var(--brand); color: var(--on-brand); }
 .store-filled:hover { background: #6d28d9; }
-.store-ghost { border-color: var(--midnight-track); color: var(--on-midnight); background: var(--midnight-overlay); }
-.store-ghost:hover { background: var(--midnight-tile); }
 .store-white { background: #ffffff; color: #4c1d95; }
 .store-white:hover { background: #f3eeff; }
+.store-ghost { border-color: var(--midnight-track); color: var(--on-midnight); background: var(--midnight-overlay); }
 .store-line { border-color: #ffffff66; color: #ffffff; }
-.store-line:hover { background: #ffffff1a; }
+/* Google Play isn't live yet: same shape as a store button, but not a link */
+.store-soon { border-style: dashed; cursor: default; }
+.store-soon:active { transform: none; }
 .stores { display: flex; flex-wrap: wrap; gap: 12px; }
 
 /* ---------- status components (from the component library) ---------- */
@@ -202,9 +203,6 @@ button { font: inherit; color: inherit; }
 .hero-pill { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 16px 0 14px; border-radius: var(--radius-full); border: 1px solid var(--midnight-track); background: var(--midnight-overlay); font-size: 14px; font-weight: 500; color: var(--on-midnight-muted); }
 .hero-pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--mint); }
 .hero .h1 span { color: var(--mint); }
-.hero-points { display: flex; flex-wrap: wrap; gap: 8px 20px; padding-top: 8px; font-size: 14.5px; color: var(--on-midnight-muted); }
-.hero-points li { display: inline-flex; align-items: center; gap: 6px; }
-.hero-points .i { color: var(--mint); }
 
 .hero-visual { position: relative; display: grid; place-items: center; min-height: 600px; }
 .phone { position: relative; width: 100%; max-width: 290px; aspect-ratio: 600 / 1304; border-radius: 46px; overflow: hidden; background: #000; box-shadow: 0 0 0 10px var(--midnight-tile), 0 40px 80px -20px #0a081f99; }
@@ -357,8 +355,6 @@ button { font: inherit; color: inherit; }
 .dev-copy { display: grid; gap: 14px; justify-items: start; }
 .dev-name { font-size: clamp(26px, 3vw, 34px); line-height: 1.3; font-weight: 700; }
 .dev-role { font-size: 15px; color: var(--brand-ink); font-weight: 600; }
-.tech { display: flex; flex-wrap: wrap; gap: 8px; }
-.tech li { display: inline-flex; align-items: center; height: 34px; padding: 0 14px; border-radius: var(--radius-full); border: 1px solid var(--line); background: var(--surface-sunken); font-size: 13.5px; font-weight: 500; direction: ltr; }
 
 /* ---------- 09 faq ---------- */
 .faq-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(32px, 5vw, 72px); align-items: start; }
@@ -375,7 +371,7 @@ button { font: inherit; color: inherit; }
 .faq .answer a { color: var(--brand-ink); font-weight: 500; }
 
 /* ---------- 10 contact ---------- */
-.contact-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); gap: 20px; }
+.contact-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 20px; }
 .contact-card { display: grid; gap: 14px; align-content: start; padding: 28px; text-decoration: none; transition: border-color .2s var(--ease); }
 .contact-card:hover { border-color: var(--brand-line); }
 .contact-card p { font-size: 15px; line-height: 1.75; color: var(--ink-2); }
@@ -387,6 +383,16 @@ button { font: inherit; color: inherit; }
 .contact-main .tile { background: var(--midnight-tile); color: var(--on-midnight); }
 .contact-main .more { color: var(--mint); }
 .contact-handle { justify-self: start; font-size: clamp(24px, 2.6vw, 30px); font-weight: 700; line-height: 1.3; }
+.follow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px 32px; margin-top: 20px; padding: 24px 28px; }
+.follow-copy { display: grid; gap: 4px; }
+.follow-copy p { font-size: 15px; line-height: 1.75; color: var(--ink-2); }
+.follow-links { display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* brand glyphs (Instagram, X) are inline SVG: Material Icons has no brand set */
+.glyph { flex: none; width: 20px; height: 20px; }
+.footer .social { display: flex; gap: 8px; }
+.footer .social a { display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border-radius: var(--radius-full); border: 1px solid var(--line); background: var(--surface); color: var(--ink-2); transition: color .15s var(--ease), border-color .15s var(--ease), background-color .15s var(--ease); }
+.footer .social a:hover { color: var(--brand-ink); border-color: var(--brand-line); background: var(--brand-soft); }
 
 /* ---------- footer ---------- */
 .footer { padding-block: 56px 32px; border-top: 1px solid var(--line); background: var(--bg); }
@@ -407,7 +413,7 @@ button { font: inherit; color: inherit; }
   .bar-fill { transition: none; }
 }
 
-/* ---------- privacy page ---------- */
+/* ---------- text pages (account deletion) ---------- */
 .doc { max-width: 760px; margin-inline: auto; }
 .doc h1 { margin-bottom: 8px; }
 .doc .updated { margin-bottom: 40px; color: var(--ink-muted); }
@@ -427,7 +433,7 @@ button { font: inherit; color: inherit; }
   .hero-grid { grid-template-columns: minmax(0, 1fr); gap: 56px; }
   .hero-copy { justify-items: center; text-align: center; }
   .hero-copy .lead { margin-inline: auto; }
-  .hero-points, .stores { justify-content: center; }
+  .stores { justify-content: center; }
   .hero-visual { min-height: 0; }
   .principles, .steps, .values, .extras { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .bento { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -438,8 +444,6 @@ button { font: inherit; color: inherit; }
   .screens figure:nth-child(even) { margin-top: 0; }
   .faq-grid { grid-template-columns: minmax(0, 1fr); }
   .faq-grid .sec-head { position: static; }
-  .contact-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-  .contact-main { grid-column: 1 / -1; }
   .download { grid-template-columns: minmax(0, 1fr); justify-items: center; text-align: center; }
   .download .stores { flex-direction: row; justify-content: center; }
   .download-copy p { margin-inline: auto; }
@@ -483,4 +487,7 @@ button { font: inherit; color: inherit; }
   .tl-label { font-size: 13px; }
   .tl-mark { padding-inline-start: 8px; }
   .footer-top { grid-template-columns: minmax(0, 1fr); }
+  .follow { padding: 24px 20px; }
+  .follow-links { width: 100%; }
+  .follow-links .btn { flex: 1 1 auto; }
 }
